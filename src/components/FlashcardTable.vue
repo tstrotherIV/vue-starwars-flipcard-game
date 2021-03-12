@@ -33,6 +33,8 @@
 import questionList from "../trivia";
 import FlashCard from "./FlashCard.vue";
 
+const saberFile = new Audio("src/assets/lightsaber.wav");
+
 export default {
   components: { FlashCard },
   methods: {
@@ -53,6 +55,15 @@ export default {
           break;
         default:
           this.difficulty = "";
+      }
+    },
+    playAudio() {
+      saberFile.play();
+    },
+    playSound(sound) {
+      if (sound) {
+        var audio = new Audio(sound);
+        audio.play();
       }
     },
   },
@@ -88,5 +99,9 @@ export default {
   display: flex;
   flex-direction: row;
   justify-content: center;
+}
+
+p {
+  color: white;
 }
 </style>

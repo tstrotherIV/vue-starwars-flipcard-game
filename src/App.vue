@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app" >
     <FlashCardTable />
   </div>
 </template>
@@ -15,6 +15,12 @@ export default {
 </script>
 
 <style>
+body {
+  background-image: url('https://www.denofgeek.com/wp-content/uploads/2020/07/star-wars-squadrons-zoom-background.jpg?fit=1920%2C1080');
+  object-fit: fill;
+  background-attachment: fixed;
+  background-position: center;
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

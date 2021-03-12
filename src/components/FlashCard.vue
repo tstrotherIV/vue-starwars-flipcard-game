@@ -37,6 +37,7 @@ export default {
 
 <style>
 .card-bgd {
+  border-radius: 15px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -71,7 +72,8 @@ export default {
   background-color: transparent;
   width: 250px;
   height: 250px;
-  border: 1px solid #f1f1f1;
+  margin: 4px;
+  /* border: 1px solid #f1f1f1; */
 }
 
 /* This container is needed to position the front and back side */
@@ -108,6 +110,7 @@ export default {
 /* Style the back side */
 .flip-card-back {
   background-color: rgba(0, 0, 255, 0.29);
+  border-radius: 15px;
   color: white;
   transform: rotateY(180deg);
 }
